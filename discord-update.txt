@@ -1,0 +1,26 @@
+ #FIRST STEP TO THE HELL
+
+  which discord
+  file $(which discord)
+
+ #YOU WILL GET A PATH
+  
+ cd /usr/share/discord
+ cd resources
+ sudo nano build_info.json
+ change version number "0.0.xx"
+
+ #SAVE IT 
+ #NEXT STEP CONGRTS YOU REACHED SO FAR DICKHEAD
+ 
+ cd ~
+ cd .config/
+ cd discord
+ sudo nano settings.json
+ add the line
+
+
+ },
+ 
+ SKIP_HOST_UPDATE: true 
+   
