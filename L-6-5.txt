@@ -1,0 +1,24 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+void check_prime(int x)
+{
+	int a=1,count=0;
+	for(a;a<=x;a++)
+	{
+		if(x%a==0)
+		count++;
+	}
+	if(count==2)
+	cout<<x<<" is a PRIME number.";
+	else
+	cout<<x<<" is a COMPOSITE number";
+}
+int main()
+{
+	int z;
+	cout<<"Enter a number to find it is PRIME or COMPOSITE:";
+	cin>>z;
+	check_prime(z);
+	getch();
+}

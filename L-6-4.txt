@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+void area(int a)
+{
+	int c;
+	c=a*a;
+	cout<<"The area of square is:"<<c;
+}
+void perimeter(int b)
+{
+	int d;
+	
+	d=b+b+b+b;
+	cout<<"The perimeter of square is:"<<d;
+}
+main()
+{
+	int x;
+	cout<<"Enter lenght of one side of square:";
+    cin>>x;
+    area(x);
+    cout<<"\n";
+    perimeter(x);
+    getch();
+}
