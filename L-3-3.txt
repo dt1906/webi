@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int l,b,area=1;
+	cout<<"enter length and breath of rectange respectively :"<<endl;
+	cin>>l>>b;
+	area=l*b;
+	cout<<"\nThe AREA of Rectangle is :"<<area;
+	return 0;
+	
+}

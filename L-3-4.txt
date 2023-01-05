@@ -1,0 +1,11 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	float temp_fahrenheit,temp_celsius,conv_formulae;
+	cout<<"Enter Temperature in Fahrenheit : ";
+	cin>>temp_fahrenheit;
+	conv_formulae=(temp_fahrenheit -32)*5/9;
+	cout<<"Temperature in Celsius is :"<<conv_formulae;
+	return 0;
+}

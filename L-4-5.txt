@@ -1,0 +1,14 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	char ls;
+	cout<<"Enter a charachter:";
+	cin>>ls;
+	if((ls>=65)&&(ls<=90))
+	cout<<ls<<" is an uppercase letter";
+	else if((ls>=97)&&(ls<=122))
+	cout<<ls<<" is a lowercase letter";
+	getch();
+}
