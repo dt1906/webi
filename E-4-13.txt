@@ -1,0 +1,18 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,b,p; char ls;
+	do
+	{
+		cout<<"Enter two numbers:";
+		cin>>a>>b;
+		p=a*b;
+		cout<<"PRODUCT="<<p<<endl;
+		cout<<"Do you want to continue(y/n)";
+		cin>>ls;
+	}
+	while(ls!='n');
+	getch();
+}

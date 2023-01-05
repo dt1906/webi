@@ -1,0 +1,17 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int m;
+	cout<<"Enter Marks:";
+	cin>>m;
+	if((m>=0)&&(m<=100))
+	{
+		if(m>=33)
+		cout<<"You Have Passed";
+		else
+		cout<<"You Have Failed";
+	}
+	getch();
+}

@@ -1,0 +1,15 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,sum=0;
+	a=1;
+	while(a<=15)
+	{
+		sum=sum+a;
+		a++;
+	}
+	cout<<"SUM="<<sum<<endl;
+	getch();
+}

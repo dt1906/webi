@@ -1,0 +1,23 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	char ls;
+	cout<<"Enter a lower-case Charachter:";
+	cin>>ls;
+	switch(ls)
+	{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			cout<<"You Entered a Vowel.";
+			break;
+		default:
+			cout<<"You Entered a Consonant";
+			break;
+	}
+	getch();
+}
