@@ -1,0 +1,14 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int k,sum;
+	k=1;sum=0;
+	while(k<10)
+	{
+		sum=sum+k;
+		cout<<k<<sum;
+		k=k+2;
+	}
+}

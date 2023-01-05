@@ -1,0 +1,22 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,b,c;
+	cout<<"Enter two numbers:";
+	cin>>a>>b;
+	cout<<"Enter 1 for SUM and 2 for PRODUCT:";
+	cin>>c;
+	switch(c)
+	{
+		case 1:
+			cout<<"SUM="<<a+b;
+			break;
+		case 2:
+			cout<<"PRODUCT="<<a*b;
+			break;
+	}
+	cout<<"AVERAGE="<<(a+b)/2;
+	getch();
+}
