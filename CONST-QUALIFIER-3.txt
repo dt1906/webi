@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	const float pie=3.14;
+	cout<<"The value of pie  in mathematics is:" <<pie;
+	return 0;
+	
+}
