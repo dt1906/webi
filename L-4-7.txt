@@ -1,0 +1,23 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int b_pay; float house_rent,net_pay;
+	cout<<"Enter your basic pay:";
+	cin>>b_pay;
+	if(b_pay<30000)
+	{
+		house_rent=b_pay+((b_pay*30)/100);
+	}
+	else if((b_pay>=30000)&&(b_pay<=50000))
+	{
+		house_rent=b_pay+((b_pay*35)/100);
+	}
+	else if(b_pay>50000)
+	{
+		house_rent=b_pay+((b_pay*40)/100);
+	}
+	net_pay=b_pay+house_rent;
+	cout<<"\nThe net pay is "<<net_pay;
+}

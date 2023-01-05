@@ -1,0 +1,12 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,i;
+	cout<<"Enter a number:";
+	cin>>a;
+	for(i=1;i<=20;i++)
+	cout<<a<<"X"<<i<<"="<<a*i<<endl;
+	getch();
+}

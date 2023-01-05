@@ -1,0 +1,26 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int a,b,c,x,y,z,e;
+	cout<<"Enter the value of a,b and c:";
+	cin>>a>>b>>c;
+	z=b*b-4*a*c;
+	if(z<0)
+	cout<<"NO REAL SOLUTIONS";
+	else if(z==0)
+	{
+		x=-b/2*a;
+		cout<<x<<" is solution";
+	}
+	else if(z>0)
+	{
+		y=-b+(sqrt(z))/2*a;
+		e=-b-(sqrt(z))/2*a;
+		cout<<"FIRST SOLUTION IS "<<y<<" AND SECOND SOLUTION IS "<<e;
+	}
+	getch();
+	
+}

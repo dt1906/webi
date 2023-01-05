@@ -1,0 +1,13 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int sum=0,i;
+	for(i=30;i<=60;i=i+3)
+	{
+		sum=sum+i;
+	}
+	cout<<"SUM="<<sum;
+	getch();
+}
