@@ -1,0 +1,19 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,b,sum,prod;
+	cout<<"Enter First Number:";
+	cin>>a;
+	cout<<"Enter Second Number:";
+	cin>>b;
+	if(a>0)
+	{
+		sum=a+b;
+		prod=a*b;
+		cout<<"\nPRODUCT="<<prod<<endl;
+		cout<<"SUM="<<sum;
+	}
+	getch();
+}

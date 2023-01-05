@@ -1,0 +1,13 @@
+#include<iostream>
+#include<conio.h>
+#include<iomanip>
+using namespace std;
+main()
+{
+	int price1=5543218540,price2=325,price3=27800;
+	cout<<"PRODUCT             "<<setw(10)<<"PRICE"<<endl;
+	cout<<"HARDDISK            "<<setw(10)<<price1<<endl;
+	cout<<"MOUSE               "<<setw(10)<<price2<<endl;
+	cout<<"COMPUTER            "<<setw(10)<<price3<<endl;
+	return 0;
+}

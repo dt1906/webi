@@ -1,0 +1,9 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	cout<<"I AM A BOY AND I WAS"<<endl;
+	cout<<"BORN IN 2004.";
+    return 0;
+}

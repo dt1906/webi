@@ -1,0 +1,14 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	int a,b,c,sum,prod;
+	cout<<"enter three integers:";
+	cin>>a>>b>>c;
+	sum=a+b+c;
+	prod=a*b*c;
+	cout<<"The sum of the integers are :"<<sum<<endl;
+	cout<<"The product of integers are :"<<prod<<endl;
+	return 0;
+}

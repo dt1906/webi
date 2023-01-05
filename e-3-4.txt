@@ -1,0 +1,11 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+main()
+{
+	char ch;
+	cout<<"Enter a Charachter:";
+	ch=getch();
+	cout<<"\nThe charachter you entered is:"<<ch;
+	return 0;
+}
