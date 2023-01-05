@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	int a,b,c,d,sum,prod,avg;
+	cout<<"Enter four  integers: ";
+	cin>>a>>b>>c>>d;
+	sum=a+b+c+d;
+	prod=a*b*c*d;
+	avg=a+b+c+d/4;
+	cout<<"\nThe sum of integers is " <<sum<<endl;
+	cout<<"\n The product is "<<prod<<endl;
+	cout<<"\n The average is "<<avg<<endl;
+	return 0;
+	
+}
