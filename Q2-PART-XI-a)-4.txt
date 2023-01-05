@@ -1,0 +1,14 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+int main()
+{
+	int a,b;
+	for(a=5;a>=1;--a)
+	{
+		cout<<endl;
+		for(b=1;b<=a;b++)
+		cout<<b<<" ";
+	}
+	getch();
+}
