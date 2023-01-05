@@ -1,0 +1,7 @@
+#include<iostream>
+using namespace std;
+main()
+{
+	cout<<"Information Technology";
+	return 0;
+}
