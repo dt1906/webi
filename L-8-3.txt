@@ -1,0 +1,21 @@
+/* Write a C++ program implementing a class with the name ConstDest having a 
+   constructor and destructor function in its body.*/
+
+#include<iostream>
+using namespace std;
+class ConstDest{
+	public:
+		ConstDest()
+		{
+			cout<<"\nI am a constructor.";
+		}
+		~ConstDest()
+		{
+			cout<<"\nI am a destructor.";
+		}
+};
+int main()
+{
+	ConstDest o1;
+	return 0;
+}

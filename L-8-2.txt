@@ -1,0 +1,23 @@
+/* Write a C++ program implementing inheritance between Employee (base class) and Manager (derived class). */
+#include<iostream>
+using namespace std;
+class Employee{
+	public:
+		void show_employee()
+		{
+			cout<<"\nThis is a base class";
+		}
+};
+class Manager:public Employee{
+	public:
+	void show_manager()
+	{
+		cout<<"\nI am a derived class";
+	}
+};
+int main()
+{
+	Manager o1;
+	o1.show_employee();
+	o1.show_manager();
+}

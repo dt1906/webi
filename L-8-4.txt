@@ -1,0 +1,29 @@
+/* Write a C++ program implementing a class with the name Time.This class should
+   have a constructor to initialize the time,hours,minutes and seconds,initiallly 
+   to zero.The class should have another function name ToSecond to convert and 
+   display the time pass by the object into seconds. */
+
+#include<iostream>
+using namespace std;
+class Time{
+	private:
+		int hour,minute,second;
+	public:
+		Time(int h1,int m1,int s1)
+		{
+			hour=h1;minute=m1;second=s1;
+		}
+		ToSecond(int x,int y,int z)
+		{
+			cout<<"Time="<<x*3600+y*60+z<<" Seconds";
+		}
+};
+int main()
+{
+	Time o1(0,0,0);
+	int fl,fd,fc;
+	cout<<"Enter Hour,Minute,Second respectively:";
+	cin>>fl>>fd>>fc;
+	o1.ToSecond(fl,fd,fc);
+	return 0;
+}
