@@ -1,0 +1,59 @@
+#First of all download an Arch linux iso from the official website
+
+1.PREFERED THAT FIRST TIME YOU INSTALL IT OR PLAY WITH IT IN A VIRTUAL MACHINE.
+2.ITS STRICTLY FOR EXPERIENCED USERS IF YOU DID A FUCK UP I AM NOT RESPONISBLE.
+3.IF YOU DON'T LIKE IT GO TO THE OFFICIAL ARCH WIKI AS A SOURCE OF INFORMATION AND INSTALLATION.
+4.YOU WILL BE ABLE TO SAY THAT THEN "I USE ARCH BTW".
+#First Step To Hell
+1.BOOT THROUGH THE ISO.
+2.YOU WILL GET A PROMPT.
+3.PING TO CHECK THE NETWORK IS U OR DOWN.
+ ping www.google.com
+ timedatectl set-ntp true
+ lsblk ## To know the disk name and size.
+ cfdisk
+ make a 128M partition primary give it a boot flag and make the other partition primary of the remaining disk space
+ and save changes and exit out of cfdisk.
+ mkfs.ext4 /dev/vda1 && mkfs.ext4 /dev/vda2
+ mkdir /mnt/boot
+ mount the 128M boot partition to /mnt/boot
+ mount the remaining space partition to /mnt
+ 
+ mount /dev/vda2 /mnt 
+ mount /dev/vda1 /mnt/boot
+ genfstab -U /mnt >> /mnt/etc/fstab
+ pacstrap /mnt base base-devel linux linux-firmware nano vim 
+ arch-chroot /mnt /bin/bash 
+# NOW YOU ARE INSIDE YOUR ACTUAL INSTALL 
+ 
+ pacman -S grub networkmanager
+ systemctl enable NetworkManager
+ nano /etc/locale.gen
+ uncomment en-us utf and iso 
+ locale-gen
+ nano /etc/local 
+ enter LANG=en-US.UTF-8
+ close the file
+ nano /etc/hostname 
+ enter any name you want hostname is like arch@hostname so you can set it according to your desire.
+ ln -sf /usr/share/zoneinfo/Asia/Karachi /etc/localtime
+ grub-install /dev/vda
+ grub-mkconfig -o /boot/grub/grub.cfg
+#And very important 
+ passwd
+#NOW EXIT OUT OF THE BIN/BASH
+umount -R /mnt 
+reboot 
+#NOW YOU HAVE A WORKING ARCH LINUX INSTALLED ENJOY THE FUCKIN OPERATING SYSTEM MAN CHILL OUT.
+
+#IMPORTANT NOTE:If you like forgot to install a network manager or never changed the default root password you have done a serious fuck up.Heres how to solve this
+
+1.ENTER THE BOOTABLE ARCH USB OR ATTACH ISO AS FIRST BOOT ON VIRTUAL MACHINE MANAGER.IF YOU ARE INSTALLING ARCH 
+ATLEAST YOU HAVE TO KNOW THESE THINGS.
+2.YOU WILL GET A RED PROMPT JUST LIKE THE INSTALLATION TIME.
+3.NOW MOUNT YOUR PARTITION OF MAXIMUM SPACE.
+mount /mnt /dev/vda2
+arch-chroot /mnt /bin/bash
+4.NOW INSTALL THE REMAINING PACAKAGES OR ANY CONFIGURATION YOU WANT TO DO.
+
+#FOR WIFI CONSULT ARCH-WIKI I USE ETHERNET.
